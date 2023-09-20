@@ -43,14 +43,16 @@
 
 	disp_rdump_memory: disp_rdump_region@b8000000 {
 		reg = <0xb8000000 0x00800000>;
-		label = "disp_rdump_region";
+		// label = "disp_rdump_region";
+		no-map;
 	};
 };
 
 &reserved_memory {
 	splash_memory: splash_region {
 		reg = <0x0 0xb8000000 0x0 0x02b00000>;
-		label = "cont_splash_region";
+		// label = "cont_splash_region";
+		no-map;
 	};
 
 	/*
